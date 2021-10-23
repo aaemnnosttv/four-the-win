@@ -52,11 +52,10 @@ export default function Cell({ column, row }) {
 
   return (
     <div
-      className={classnames('relative', 'bg-opacity-40', {
+      className={classnames('relative', 'bg-opacity-40', 'pb-[100%]', {
         'bg-red-200': selectedColumn === column && currentPlayer === 1,
         'bg-yellow-200': selectedColumn === column && currentPlayer === 2,
       })}
-      style={{ paddingBottom: '100%' }}
       onMouseOver={isLocked ? undefined : onHover}
     >
       <div className="m-2 absolute inset-0">
