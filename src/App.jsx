@@ -1,9 +1,9 @@
 import React from 'react';
 import Board from './Board';
-
 import { RegistryProvider } from '@wordpress/data';
 import { registry } from './data';
 import Header from './Header';
+import './index.css'
 
 export default function App() {
   return (

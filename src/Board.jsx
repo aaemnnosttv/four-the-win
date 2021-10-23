@@ -57,6 +57,7 @@ export default function Board() {
       {/* Body */}
       <div className="flex-1">
         {/* Grid */}
+        {/* Dynamic class: grid-cols-7 */}
         <div
           className={`bg-blue-400 grid grid-cols-${NUM_COLS} relative border-blue-500 border-l-8 border-r-8`}
         >
