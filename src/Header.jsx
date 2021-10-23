@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import { useSelect } from '@wordpress/data';
 
 const Player = ({ color, num = 0, winner }) => (
-  <div className={classnames('flex-1', 'p-2', `bg-${color}`)}>
+  <div className={classnames('flex-1', 'p-2', color)}>
     Player {num} {winner && '🏆'}
   </div>
 );
@@ -19,12 +19,12 @@ export default function Header() {
       <div className="flex">
         <Player
           num="1"
-          color={currentPlayer === 1 ? 'red-400' : 'gray-200'}
+          color={currentPlayer === 1 ? 'bg-red-400' : 'bg-gray-200'}
           winner={winner === 1}
         />
         <Player
           num="2"
-          color={currentPlayer === 2 ? 'yellow-400' : 'gray-200'}
+          color={currentPlayer === 2 ? 'bg-yellow-400' : 'bg-gray-200'}
           winner={winner === 2}
         />
       </div>
