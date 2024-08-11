@@ -1,6 +1,7 @@
 {
   "name": "four-the-win",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "keywords": [],
   "main": "src/index.js",
